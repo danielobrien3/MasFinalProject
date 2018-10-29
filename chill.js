@@ -1,25 +1,38 @@
 $(document).ready(function() { 
 
-	$(".vid").animate({
+
+
+	$(".vidContainer").animate({
 		height: "toggle"
 	} ,{
 		duration: 0
 	});
 
+
 	var songList = $(".song");
 
-	songList.hover(function(){
-		$(this).find(".vid").animate({
+	songList.click(function(){
+		$(this).find(".vidContainer").stop()
+		$(this).find(".vidContainer").animate({
 			height: "toggle"
 		} ,{
 			duration:400
-		});
+		})
+		$(this).find(".vidContainer").scrollIntoView()
+
 	}, function(){
-		$(this).find(".vid").animate({
+		$(this).find(".vidContainer").stop()
+		$(this).find(".vidContainer").animate({
 			height: "toggle"
-		},{
+		} ,{
 			duration:400
-		});
+		})
 	});
+
+
+	//Make .vid stay open if its video is playing, even if the mouse scrolls out
+
+	
 	
 });
+

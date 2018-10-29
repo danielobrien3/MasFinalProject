@@ -1,37 +1,99 @@
-
+body{
+	background-image: url("images/ocean.jpg")
+}
 #songList{
 	position: relative;
 	top:40px;
-	right: 150px;
-	font-size: 1.5em;
-	direction: rtl;
-	text-align: right;
 	font-family: 'Montserrat', sans-serif;
 }
 
-#songList li{
+.song {
 	position: relative; 
-	left: 10px;
 	font-size: 2.5em;
-}
-
-#songList li span{ 
-	color: black;
-	position: relative;
+	color: blaxck;
 	bottom: 8px;
-	right: 100px;
+	text-align: center;
 	font-size: .5em;
 	letter-spacing: .145cm; 
+	font-size: 1.5em;
+	padding-bottom: 40px;
 }
 
-.vid {
-	
+.songName{
+	font-size: 1.15em;
+}
+
+.song span:hover{
+	cursor: pointer;
 }
 
 .vidContainer{
+	width: 80%;
+	left:10%;
 	position: relative;
-	left: 100px;
-	top: 10px;
-	background-color: #bbbbbb;
+	padding-top: 10px;
+	margin-top: 20px;
+	text-align: center;
 }
 
+.vidContainer:hover{
+	cursor:auto;
+	
+}
+
+.arrow{
+	font-size: .7em;
+}
+
+.songInfo{
+	position: relative;
+	width: 72%;
+	left: 14%;
+	
+}
+
+.songTitle{
+	position: relative;
+	width: 90%;
+	left: 5%;
+	
+}
+
+.songDescription{
+	letter-spacing: .025cm;
+	position: relative;
+	left: 5%;
+	font-size: .8em;
+	width: 90%;
+	font-family: 'Arvo', serif;
+	padding-bottom: 20px; 
+}
+
+.more{
+	width: 80%;
+	position: relative;
+	left: 10%;
+	bottom: 10px;
+	text-align: center;
+	padding-bottom: 0px;
+	font-size: .7em;
+	padding-top: 10px;
+}
+
+
+.more a{
+	color: black;
+	text-decoration: none;
+
+}
+
+.more a:hover{
+	cursor: pointer;
+	/*border: outset;
+	border-color:#cccccc;
+	padding-left: 5px;
+	border-width: 3px;*/
+	font-size: 1.1em;
+	font-weight: bold;
+
+}
